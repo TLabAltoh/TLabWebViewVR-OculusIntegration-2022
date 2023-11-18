@@ -44,7 +44,7 @@ When specifying OpenXR as the XR plugin provider, a part of the manifest is forc
 ### Installing
 Clone the repository with the following command
 ```
-git clone . https://github.com/TLabAltoh/TLabWebViewVR-XRInteractionToolkit-2022.git
+git clone . https://github.com/TLabAltoh/TLabWebViewVR-OculusIntegration-2022.git
 ```
 
 ### Set up
