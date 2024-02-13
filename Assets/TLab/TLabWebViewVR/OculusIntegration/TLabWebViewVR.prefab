@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3685352231241167536}
   - component: {fileID: 1812378173222755294}
   - component: {fileID: 6272470167859563041}
-  - component: {fileID: 758591374718453809}
-  - component: {fileID: 3890289578771306140}
+  - component: {fileID: 8703085470998520552}
   - component: {fileID: 5976847279734362725}
+  - component: {fileID: 3890289578771306140}
   m_Layer: 5
   m_Name: WebView
   m_TagString: Untagged
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_webHeight: 1024
   m_texWidth: 512
   m_texHeight: 512
---- !u!114 &758591374718453809
+--- !u!114 &8703085470998520552
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,14 +105,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1230339583510961678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f0391f896636a64c807c92fd4289a51, type: 3}
+  m_Script: {fileID: 11500000, guid: e06f846e1e589444cb635fedc4ba9e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_tlabWebView: {fileID: 6272470167859563041}
-  m_pointerPos: {fileID: 0}
-  m_webViewRect: {fileID: 1979507781648527920}
-  m_controller: 2
-  m_touchButton: 8192
+  m_webview: {fileID: 6272470167859563041}
+--- !u!114 &5976847279734362725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230339583510961678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91686fb0930adab4087177278ad40c29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyborad: {fileID: 5926680133264466968}
+  m_activeOnAwake: 0
+  m_webview: {fileID: 6272470167859563041}
 --- !u!114 &3890289578771306140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,21 +180,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &5976847279734362725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230339583510961678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91686fb0930adab4087177278ad40c29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_keyborad: {fileID: 5926680133264466968}
-  m_activeOnAwake: 0
-  m_webview: {fileID: 6272470167859563041}
 --- !u!1 &2331182177100371532
 GameObject:
   m_ObjectHideFlags: 0
