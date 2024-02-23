@@ -41,8 +41,7 @@ When specifying OpenXR as the XR plugin provider, a part of the manifest is forc
 <uses-permission android:name="ANDROID.PERMISSION.INTERNET"/> <!-- Missing !! -->
 ```
 
-### The policy has been changed to manage
-libraries in the repository as submodules
+### The policy has been changed to manage libraries in the repository as submodules
 
 - Commit ``` f26c332 ``` If you cloned the project before, please clone the repository again.
 - Use ``` git submodule update --init ``` to adjust the commit of the submodule to the version recommended by the project.
@@ -98,5 +97,6 @@ UNITYWEBVIEW_ANDROID_ENABLE_MICROPHONE
 | plugin provider | Oculus (not OpenXR) |  
  
 ## Issue
-- After updating the repository, the built app crashes
-	- The specific cause of this problem is still unknown. Please delete the build cache (``` root/Library/Bee ```) and try building again.
+### After updating the repository, the built app crashes
+
+The specific cause of this problem is still unknown. Please delete the build cache (``` root/Library/Bee ```) and try building again.
