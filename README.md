@@ -5,8 +5,9 @@
 - This sample is the minimum configuration for using TLabWebView with the Oculus Integration.
 
 ## Note
-- Android Custom Manifest Issue 1
-	- Unity 2021.1.* recommended adding the following to the manifest file
+### Android Custom Manifest Issue 1
+
+Unity 2021.1.* recommended adding the following to the manifest file
 
 ```xml
 <!-- For Unity-WebView -->
@@ -27,22 +28,24 @@
 <!-- For Unity-WebView -->
 ```
   
-	- However, this is not recommended for Unity 2022.1.* and later. 
+However, this is not recommended for Unity 2022.1.* and later. 
 	Adding this caused a problem with the manifest file not being properly configured at build time.
 	It is recommended not to add these items to Android Custom Manifest after Unity 2022.1.*. (Creating Custom Manifest itself is not a problem)
   
-- Android Custom Manifest Issue 2
-	- When specifying OpenXR as the XR plugin provider, a part of the manifest is forcibly deleted and an error occurs in WebView. Therefore, it is recommended to specify Oculus as the plugin provider.
+### Android Custom Manifest Issue 2
+
+When specifying OpenXR as the XR plugin provider, a part of the manifest is forcibly deleted and an error occurs in WebView. Therefore, it is recommended to specify Oculus as the plugin provider.
 
 ```xml
 <!-- Error: net::ERR_CACHE_MISS -->
 <uses-permission android:name="ANDROID.PERMISSION.INTERNET"/> <!-- Missing !! -->
 ```
 
-- The policy has been changed to manage libraries in the repository as submodules.
+### The policy has been changed to manage
+libraries in the repository as submodules
 
-	- Commit ``` f26c332 ``` If you cloned the project before, please clone the repository again.
-	- Use ``` git submodule update --init ``` to adjust the commit of the submodule to the version recommended by the project.
+- Commit ``` f26c332 ``` If you cloned the project before, please clone the repository again.
+- Use ``` git submodule update --init ``` to adjust the commit of the submodule to the version recommended by the project.
 
 ## Requirements
 - Unity Editor: 2022.3.19f1
