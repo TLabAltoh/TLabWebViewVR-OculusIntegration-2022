@@ -28,19 +28,22 @@
 <!-- For Unity-WebView -->
 ```
 
-
+  
 	However, this is not recommended for Unity 2022.1.* and later. 
 	Adding this caused a problem with the manifest file not being properly configured at build time.
 	It is recommended not to add these items to Android Custom Manifest after Unity 2022.1.*. (Creating Custom Manifest itself is not a problem)
-
+  
 
 - Android Custom Manifest Issue 2
 
 	When specifying OpenXR as the XR plugin provider, a part of the manifest is forcibly deleted and an error occurs in WebView. Therefore, it is recommended to specify Oculus as the plugin provider.
+
+
 ```xml
 <!-- Error: net::ERR_CACHE_MISS -->
 <uses-permission android:name="ANDROID.PERMISSION.INTERNET"/> <!-- Missing !! -->
 ```
+
 
 - The policy has been changed to manage libraries in the repository as submodules.
 
@@ -77,7 +80,9 @@ git submodule update --init
 | Minimux API Level | 29 |  
 | Target API Level | 32 |  
 
-	- Add the following symbols to Project Settings --> Player --> Other Settings (to be used at build time)  
+
+- Add the following symbols to Project Settings --> Player --> Other Settings (to be used at build time)  
+
 
 ```
 UNITYWEBVIEW_ANDROID_USES_CLEARTEXT_TRAFFIC
