@@ -38,7 +38,7 @@
 ```xml
 <!-- Error: net::ERR_CACHE_MISS -->
 <uses-permission android:name="ANDROID.PERMISSION.INTERNET"/> <!-- Missing !! -->
-	```
+```
 
 - The policy has been changed to manage libraries in the repository as submodules.
 
@@ -50,6 +50,7 @@
 
 ### Installing
 Clone the repository with the following command
+
 ```
 git clone https://github.com/TLabAltoh/TLabWebViewVR-OculusIntegration-2022.git
 
