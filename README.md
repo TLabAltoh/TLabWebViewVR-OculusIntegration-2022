@@ -28,9 +28,11 @@
 <!-- For Unity-WebView -->
 ```
 
+
 	However, this is not recommended for Unity 2022.1.* and later. 
 	Adding this caused a problem with the manifest file not being properly configured at build time.
 	It is recommended not to add these items to Android Custom Manifest after Unity 2022.1.*. (Creating Custom Manifest itself is not a problem)
+
 
 - Android Custom Manifest Issue 2
 
