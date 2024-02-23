@@ -6,7 +6,6 @@
 
 ## Note
 - Android Custom Manifest Issue 1
-
 	- Unity 2021.1.* recommended adding the following to the manifest file
 
 ```xml
@@ -33,15 +32,12 @@
 	It is recommended not to add these items to Android Custom Manifest after Unity 2022.1.*. (Creating Custom Manifest itself is not a problem)
   
 - Android Custom Manifest Issue 2
-
 	- When specifying OpenXR as the XR plugin provider, a part of the manifest is forcibly deleted and an error occurs in WebView. Therefore, it is recommended to specify Oculus as the plugin provider.
-
 
 ```xml
 <!-- Error: net::ERR_CACHE_MISS -->
 <uses-permission android:name="ANDROID.PERMISSION.INTERNET"/> <!-- Missing !! -->
 ```
-
 
 - The policy has been changed to manage libraries in the repository as submodules.
 
@@ -100,5 +96,4 @@ UNITYWEBVIEW_ANDROID_ENABLE_MICROPHONE
  
 ## Issue
 - After updating the repository, the built app crashes
-
 	- The specific cause of this problem is still unknown. Please delete the build cache (``` root/Library/Bee ```) and try building again.
