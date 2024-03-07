@@ -96,6 +96,7 @@ MonoBehaviour:
   m_webHeight: 1024
   m_texWidth: 512
   m_texHeight: 512
+  m_onPageFinish: 
 --- !u!114 &8703085470998520552
 MonoBehaviour:
   m_ObjectHideFlags: 0
