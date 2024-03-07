@@ -7,6 +7,7 @@ public class SearchBarInteractionSample : MonoBehaviour
     [SerializeField] private TLabWebView m_webview;
     [SerializeField] private TLabVKeyborad m_keyborad;
 
+#if false
     /// <summary>
     /// Press button to execute
     /// </summary>
@@ -61,6 +62,7 @@ public class SearchBarInteractionSample : MonoBehaviour
 
         m_webview.EvaluateJS(jsCode);
     }
+#endif
 
     public void OnMessage(string message)
     {
