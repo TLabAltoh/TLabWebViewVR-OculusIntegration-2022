@@ -75,7 +75,7 @@ git submodule update --init
 | --- | --- |  
 | Color Space | Linear |  
 | Graphics | OpenGLES3 |  
-| Minimux API Level | 29 |  
+| Minimum API Level | 29 |  
 | Target API Level | 32 |  
 
 
