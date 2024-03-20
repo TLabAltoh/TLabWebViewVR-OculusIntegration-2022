@@ -4,7 +4,12 @@
 - Sample project for using TLabWebView with Oculus Integration
 - This sample is the minimum configuration for using TLabWebView with the Oculus Integration.
 
+## Document
+[document is here](https://tlabgames.gitbook.io/tlabwebview)
+
 ## Note
+<details><summary>please see here</summary>
+
 ### Android Custom Manifest Issue 1
 
 Unity 2021.1.* recommended adding the following to the manifest file
@@ -45,6 +50,8 @@ When specifying OpenXR as the XR plugin provider, a part of the manifest is forc
 
 - Commit ``` f26c332 ``` If you cloned the project before, please clone the repository again.
 - Use ``` git submodule update --init ``` to adjust the commit of the submodule to the version recommended by the project.
+
+</details>
 
 ## Getting Started
 
@@ -99,6 +106,11 @@ UNITYWEBVIEW_ANDROID_ENABLE_MICROPHONE
 | plugin provider | Oculus (not OpenXR) |  
  
 ## Issue
+
+<details><summary>please see here</summary>
+
 ### After updating the repository, the built app crashes
 
 The specific cause of this problem is still unknown. Please delete the build cache (``` root/Library/Bee ```) and try building again.
+    
+</details>
