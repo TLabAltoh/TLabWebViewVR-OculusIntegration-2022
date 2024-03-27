@@ -152,8 +152,6 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 11400000, guid: 69335380a9483534d9bc1b591411682a, type: 2}
-  - {fileID: 11400000, guid: 061634df56bbae649aa6489f56377760, type: 2}
-  - {fileID: 7376618218888565109, guid: 70b55ead175facf48ad22d745217debf, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -755,7 +753,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: UNITYWEBVIEW_ANDROID_USES_CLEARTEXT_TRAFFIC;UNITYWEBVIEW_ANDROID_ENABLE_CAMERA;UNITYWEBVIEW_ANDROID_ENABLE_MICROPHONE
+    Android: UNITYWEBVIEW_ANDROID_SUPPORT_OCULUS;UNITYWEBVIEW_ANDROID_USES_CLEARTEXT_TRAFFIC;UNITYWEBVIEW_ANDROID_ENABLE_CAMERA;UNITYWEBVIEW_ANDROID_ENABLE_MICROPHONE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
