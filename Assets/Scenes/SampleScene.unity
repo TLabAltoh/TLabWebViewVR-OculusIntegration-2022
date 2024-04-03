@@ -385,6 +385,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &320655411 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6169922746010562281, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
+  m_PrefabInstance: {fileID: 801589312}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &450836220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,6 +1952,18 @@ PrefabInstance:
         elements[i].addEventListener(''focusin'', focusin);                 elements[i].addEventListener(''focusout'',
         focusout);             }'
       objectReference: {fileID: 0}
+    - target: {fileID: 6272470167859563041, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
+      propertyPath: m_jsEventCallback.onDownloadStart
+      value: 'window.TLabWebViewActivity.unitySendMessage(''Download Event Test'',
+        ''OnDownloadStart'', ''download start. url: '' + unity_webview_dl_url + '',
+        id: '' + unity_webview_dl_id);'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272470167859563041, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
+      propertyPath: m_jsEventCallback.onDownloadFinish
+      value: 'window.TLabWebViewActivity.unitySendMessage(''Download Event Test'',
+        ''OnDownloadFinish'', ''download finish. uri: '' + unity_webview_dl_uri +
+        '', id: '' + unity_webview_dl_id);'
+      objectReference: {fileID: 0}
     - target: {fileID: 6405889000675010043, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2617,7 +2634,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6169922746010562281, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1731012735}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8705393428820459414, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
       insertIndex: -1
@@ -2766,6 +2786,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4802744215004400, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
   m_PrefabInstance: {fileID: 979944431}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1308853529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308853530}
+  - component: {fileID: 1308853531}
+  m_Layer: 5
+  m_Name: Download Event Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1308853530
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308853529}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1731012735}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1308853531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308853529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02591813623dc3d4f888e789ed6a0709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_webview: {fileID: 801589315}
 --- !u!1 &1640113200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2864,6 +2933,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
   m_PrefabInstance: {fileID: 1683406595}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1731012734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1731012735}
+  m_Layer: 5
+  m_Name: Tests
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1731012735
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731012734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1308853530}
+  m_Father: {fileID: 320655411}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
