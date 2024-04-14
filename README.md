@@ -1,14 +1,19 @@
 # TLabWebViewVR-OculusIntegration-2022
 
 ## Overview
-- Sample project for using TLabWebView with Oculus Integration
-- This sample is the minimum configuration for using TLabWebView with the Oculus Integration.
+This sample is the minimum configuration for using TLabWebView with the MetaXR SDK.
 
 ## Document
 [document is here](https://tlabgames.gitbook.io/tlabwebview)
 
 ## Note
 <details><summary>please see here</summary>
+
+### Oculus SDK Updated to Meta XR SDK
+The Oculus SDK has now been updated for Oculus integration SDK to Meta XR All in One SDK, this sdk requires Unity Editor 2021.26f1 ~. Oculus SDK versions after 57 (Meta XR SDK) are managed by Unity Package Manager (UPM), but have near-compatibility between Oculus Integration and the Meta XR SDK. However, in the sample scene in this repository, the Meta XR SDK sample has been updated to no longer use the OVR Input Module and switched to Pointable Canvas Module based, because the UI implementation sample including the Oculus SDK is based on the Pointable Canvas Module and it's inappropriate to implement webview with the OVR Input Module as before. (2021/4/14)
+
+### Module Management Policy Modified
+The policy has been changed to manage libraries in the repository as submodules after commit ``` 4a7a833 ```. Please run ``` git submodule update --init ``` to adjust the commit of the submodule to the version recommended by the project.
 
 ### Issue 1 (Android Custom Manifest)
 
@@ -45,15 +50,6 @@ When specifying OpenXR as the XR plugin provider, a part of the manifest is forc
 <!-- Error: net::ERR_CACHE_MISS -->
 <uses-permission android:name="ANDROID.PERMISSION.INTERNET"/> <!-- Missing !! -->
 ```
-
-### Issue 3 (After updating the repository, the built app crashes)
-
-The specific cause of this problem is still unknown. Please delete the build cache (``` root/Library/Bee ```) and try building again.
-
-### The policy has been changed to manage libraries in the repository as submodules
-
-- Commit ``` f26c332 ``` If you cloned the project before, please clone the repository again.
-- Use ``` git submodule update --init ``` to adjust the commit of the submodule to the version recommended by the project.
 
 </details>
 
