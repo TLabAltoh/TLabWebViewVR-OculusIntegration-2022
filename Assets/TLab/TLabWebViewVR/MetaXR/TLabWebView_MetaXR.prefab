@@ -91,18 +91,23 @@ MonoBehaviour:
   m_rawImage: {fileID: 1812378173222755294}
   m_url: https://www.youtube.com/
   m_dlOption: 0
-  m_subDir: downloads
+  m_dlSubDir: downloads
   m_webWidth: 1024
   m_webHeight: 1024
   m_texWidth: 512
   m_texHeight: 512
   m_jsEventCallback:
     onPageFinish: 
-    onDownloadStart: 
-    onDownloadFinish: 
-    dl_uri_name: unity_webview_dl_uri
-    dl_url_name: unity_webview_dl_url
-    dl_id_name: unity_webview_dl_id
+    dlEvent:
+      onStart: 
+      onFinish: 
+      varDlUriName: unity_webview_dl_uri
+      varDlUrlName: unity_webview_dl_url
+      varDlIdName: unity_webview_dl_id
+    catchDlUrlEvent:
+      go: 
+      func: 
+  m_intentFilters: []
 --- !u!114 &8703085470998520552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,13 +312,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8705393428820459414}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 8781335826277464380}
+        m_TargetAssemblyTypeName: TLab.Android.WebView.SearchBar, com.tlabaltoh.webview.runtime
+        m_MethodName: LoadUrl
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
