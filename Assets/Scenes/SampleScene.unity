@@ -1894,6 +1894,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6272470167859563041, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
+      propertyPath: m_captureMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272470167859563041, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
       propertyPath: m_onPageFinish
       value: '            var elements = [];              function searchShadowRoot(node,
         id) {                 if (node == null) {                     return;                
@@ -1919,27 +1923,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6272470167859563041, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
       propertyPath: m_jsEventCallback.onPageFinish
-      value: '            var elements = [];              function searchShadowRoot(node,
-        id) {                 if (node == null) {                     return;                
-        }                  if (node.shadowRoot != undefined && node.shadowRoot !=
-        null) {                     if (!elements.includes(node.shadowRoot)) {                        
-        elements.push(node.shadowRoot);                     }                    
-        searchShadowRoot(node.shadowRoot, id);                 }                 
-        for (var i = 0; i < node.childNodes.length; i++) {                     searchShadowRoot(node.childNodes[i],
-        id);                 }             }              elements.push(document);            
-        searchShadowRoot(document, ''input'');             searchShadowRoot(document,
-        ''textarea'');              function focusin (e) {                 const
-        target = e.target;                 if (target.tagName == ''INPUT'' || target.tagName
-        == ''TEXTAREA'') {                     window.TLabWebViewActivity.unitySendMessage(''SearchBar'',
-        ''OnMessage'', ''Foucusin'');                 }             }             
-        function focusout (e) {                 const target = e.target;                
-        if (target.tagName == ''INPUT'' || target.tagName == ''TEXTAREA'') {                    
-        window.TLabWebViewActivity.unitySendMessage(''SearchBar'', ''OnMessage'',
-        ''Foucusout'');                 }             }              for (var i =
-        0; i < elements.length; i++) {                 elements[i].removeEventListener(''focusin'',
-        focusin);                 elements[i].removeEventListener(''focusout'', focusout);                 
-        elements[i].addEventListener(''focusin'', focusin);                 elements[i].addEventListener(''focusout'',
-        focusout);             }'
+      value: "            var elements = [];\r\n\r\n            function searchShadowRoot(node,
+        id) {\r\n                if (node == null) {\r\n                    return;\r\n               
+        }\r\n\r\n                if (node.shadowRoot != undefined && node.shadowRoot
+        != null) {\r\n                    if (!elements.includes(node.shadowRoot))
+        {\r\n                        elements.push(node.shadowRoot);\r\n                   
+        }\r\n                    searchShadowRoot(node.shadowRoot, id);\r\n               
+        }\r\n\r\n                for (var i = 0; i < node.childNodes.length; i++)
+        {\r\n                    searchShadowRoot(node.childNodes[i], id);\r\n               
+        }\r\n            }\r\n\r\n            elements.push(document);\r\n           
+        searchShadowRoot(document, 'input');\r\n            searchShadowRoot(document,
+        'textarea');\r\n\r\n            function focusin (e) {\r\n               
+        const target = e.target;\r\n                if (target.tagName == 'INPUT'
+        || target.tagName == 'TEXTAREA') {\r\n                    window.TLabWebViewActivity.unitySendMessage('SearchBar',
+        'OnMessage', 'Foucusin');\r\n                }\r\n            }\r\n\r\n           
+        function focusout (e) {\r\n                const target = e.target;\r\n               
+        if (target.tagName == 'INPUT' || target.tagName == 'TEXTAREA') {\r\n                   
+        window.TLabWebViewActivity.unitySendMessage('SearchBar', 'OnMessage', 'Foucusout');\r\n               
+        }\r\n            }\r\n\r\n            for (var i = 0; i < elements.length;
+        i++) {\r\n                elements[i].removeEventListener('focusin', focusin);\r\n               
+        elements[i].removeEventListener('focusout', focusout);\r\n\r\n               
+        elements[i].addEventListener('focusin', focusin);\r\n                elements[i].addEventListener('focusout',
+        focusout);\r\n            }\r"
       objectReference: {fileID: 0}
     - target: {fileID: 6272470167859563041, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
       propertyPath: m_jsEventCallback.onDownloadStart
@@ -2020,6 +2025,10 @@ PrefabInstance:
     - target: {fileID: 6721324733542323797, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770677721260851088, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
+      propertyPath: m_Sprite
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2941,6 +2950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SendPointerHoverToParent: 1
   _useInitialPressPositionForDrag: 1
+  _exclusiveMode: 0
 --- !u!1 &1230797982
 GameObject:
   m_ObjectHideFlags: 0
