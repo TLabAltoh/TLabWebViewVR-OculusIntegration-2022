@@ -1922,29 +1922,42 @@ PrefabInstance:
         focusout);             }'
       objectReference: {fileID: 0}
     - target: {fileID: 6272470167859563041, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
+      propertyPath: m_eventCallback.onPageFinish
+      value: "var elements = [];\n\nfunction searchShadowRoot(node, id) {\n    if
+        (node == null) {\n        return;\n    }\n\n    if (node.shadowRoot != undefined
+        && node.shadowRoot != null) {\n        if (!elements.includes(node.shadowRoot))
+        {\n            elements.push(node.shadowRoot);\n        }\n        searchShadowRoot(node.shadowRoot,
+        id);\n    }\n\n    for (var i = 0; i < node.childNodes.length; i++) {\n       
+        searchShadowRoot(node.childNodes[i], id);\n    }\n}\n\nelements.push(document);\nsearchShadowRoot(document,
+        'input');\nsearchShadowRoot(document, 'textarea');\n\nfunction focusin (e)
+        {\n    const target = e.target;\n    if (target.tagName == 'INPUT' || target.tagName
+        == 'TEXTAREA') {\n        window.TLabWebViewActivity.unitySendMessage('SearchBar',
+        'OnMessage', 'Foucusin');\n    }\n}\n\nfunction focusout (e) {\n    const
+        target = e.target;\n    if (target.tagName == 'INPUT' || target.tagName ==
+        'TEXTAREA') {\n        window.TLabWebViewActivity.unitySendMessage('SearchBar',
+        'OnMessage', 'Foucusout');\n    }\n}\n\nfor (var i = 0; i < elements.length;
+        i++) {\n    elements[i].removeEventListener('focusin', focusin);\n    elements[i].removeEventListener('focusout',
+        focusout);\n\n    elements[i].addEventListener('focusin', focusin);\n   
+        elements[i].addEventListener('focusout', focusout);\n}"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272470167859563041, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
       propertyPath: m_jsEventCallback.onPageFinish
-      value: "            var elements = [];\r\n\r\n            function searchShadowRoot(node,
-        id) {\r\n                if (node == null) {\r\n                    return;\r\n               
-        }\r\n\r\n                if (node.shadowRoot != undefined && node.shadowRoot
-        != null) {\r\n                    if (!elements.includes(node.shadowRoot))
-        {\r\n                        elements.push(node.shadowRoot);\r\n                   
-        }\r\n                    searchShadowRoot(node.shadowRoot, id);\r\n               
-        }\r\n\r\n                for (var i = 0; i < node.childNodes.length; i++)
-        {\r\n                    searchShadowRoot(node.childNodes[i], id);\r\n               
-        }\r\n            }\r\n\r\n            elements.push(document);\r\n           
-        searchShadowRoot(document, 'input');\r\n            searchShadowRoot(document,
-        'textarea');\r\n\r\n            function focusin (e) {\r\n               
-        const target = e.target;\r\n                if (target.tagName == 'INPUT'
-        || target.tagName == 'TEXTAREA') {\r\n                    window.TLabWebViewActivity.unitySendMessage('SearchBar',
-        'OnMessage', 'Foucusin');\r\n                }\r\n            }\r\n\r\n           
-        function focusout (e) {\r\n                const target = e.target;\r\n               
-        if (target.tagName == 'INPUT' || target.tagName == 'TEXTAREA') {\r\n                   
-        window.TLabWebViewActivity.unitySendMessage('SearchBar', 'OnMessage', 'Foucusout');\r\n               
-        }\r\n            }\r\n\r\n            for (var i = 0; i < elements.length;
-        i++) {\r\n                elements[i].removeEventListener('focusin', focusin);\r\n               
-        elements[i].removeEventListener('focusout', focusout);\r\n\r\n               
-        elements[i].addEventListener('focusin', focusin);\r\n                elements[i].addEventListener('focusout',
-        focusout);\r\n            }\r"
+      value: "var elements = [];\n\nfunction searchShadowRoot(node, id) {\n    if
+        (node == null) {\n        return;\n    }\n\n    if (node.shadowRoot != undefined
+        && node.shadowRoot != null) {\n        if (!elements.includes(node.shadowRoot))
+        {\n            elements.push(node.shadowRoot);\n        }\n        searchShadowRoot(node.shadowRoot,
+        id);\n    }\n\n    for (var i = 0; i < node.childNodes.length; i++) {\n       
+        searchShadowRoot(node.childNodes[i], id);\n    }\n}\n\nelements.push(document);\nsearchShadowRoot(document,
+        'input');\nsearchShadowRoot(document, 'textarea');\n\nfunction focusin (e)
+        {\n    const target = e.target;\n    if (target.tagName == 'INPUT' || target.tagName
+        == 'TEXTAREA') {\n        window.TLabWebViewActivity.unitySendMessage('SearchBar',
+        'OnMessage', 'Foucusin');\n    }\n}\n\nfunction focusout (e) {\n    const
+        target = e.target;\n    if (target.tagName == 'INPUT' || target.tagName ==
+        'TEXTAREA') {\n        window.TLabWebViewActivity.unitySendMessage('SearchBar',
+        'OnMessage', 'Foucusout');\n    }\n}\n\nfor (var i = 0; i < elements.length;
+        i++) {\n    elements[i].removeEventListener('focusin', focusin);\n    elements[i].removeEventListener('focusout',
+        focusout);\n\n    elements[i].addEventListener('focusin', focusin);\n   
+        elements[i].addEventListener('focusout', focusout);\n}"
       objectReference: {fileID: 0}
     - target: {fileID: 6272470167859563041, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
       propertyPath: m_jsEventCallback.onDownloadStart
