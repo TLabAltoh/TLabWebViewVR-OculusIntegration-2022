@@ -1,10 +1,10 @@
 # TLabWebViewVR-OculusIntegration-2022
 
 ## Overview
-This sample is the minimum configuration for using TLabWebView with the MetaXR SDK. This includes searchbar example and javascript event (text area focus/focusout) example to toggle virtual keyboard visibility.
+This sample is the minimum configuration for using [```TLabWebView```](https://github.com/TLabAltoh/TLabWebView) with the [```MetaXR SDK```](https://developers.meta.com/horizon/downloads/package/meta-xr-sdk-all-in-one-upm). This includes searchbar example and javascript event (text area focus/focusout) example to toggle virtual keyboard visibility.
 
-## Document
-[document is here](https://tlabgames.gitbook.io/tlabwebview)
+[Document is here](https://tlabgames.gitbook.io/tlabwebview)  
+[Snippets is here](https://gist.github.com/TLabAltoh/e0512b3367c25d3e1ec28ddbe95da497#file-tlabwebview-snippets-md)
 
 ## Getting Started
 
@@ -23,29 +23,4 @@ git submodule update --init
 ```
 
 ### Set up
-- Build Settings
-
-| Property | Value   |
-| -------- | ------- |
-| Platform | Android |
-
-- Project Settings
-
-| Property          | Value  |
-| ----------------- | ------ |
-| Color Space       | Linear |
-| Minimum API Level | 29     |
-| Target API Level  | 32     |
-
-
-- Add the following symbols to Project Settings --> Player --> Other Settings (to be used at build time)
-
-```
-UNITYWEBVIEW_ANDROID_USES_CLEARTEXT_TRAFFIC
-```
-```
-UNITYWEBVIEW_ANDROID_ENABLE_CAMERA
-```
-```
-UNITYWEBVIEW_ANDROID_ENABLE_MICROPHONE
-```
+Please see the setup section [here](https://github.com/TLabAltoh/TLabWebView.git)
