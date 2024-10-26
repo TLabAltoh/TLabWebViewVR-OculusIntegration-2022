@@ -1891,46 +1891,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 801589314}
-    - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Show
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TLab.InputField.TLabInputFieldBase, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: TLab.VKeyborad.TLabVKeyborad, TLabVKeyborad.Runtime
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837167840562775419, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6945593041026160437, guid: e81afc2b3d9f6c3428a5b86e4ca95ef3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
