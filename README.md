@@ -6,6 +6,9 @@ This sample Unity project is the minimum configuration for using [```TLabWebView
 [Document is here](https://tlabgames.gitbook.io/tlabwebview)  
 [Snippets is here](https://gist.github.com/TLabAltoh/e0512b3367c25d3e1ec28ddbe95da497#file-tlabwebview-snippets-md)
 
+> [!WARNING]
+> Note that this project only works on Android devices; it will not display web pages when run on the Unity Editor.
+
 ## Getting Started
 
 ### Requirements
