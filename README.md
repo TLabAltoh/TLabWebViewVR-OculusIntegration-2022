@@ -9,6 +9,9 @@ This sample Unity project is the minimum configuration for using [```TLabWebView
 > [!WARNING]
 > Note that this project only works on Android devices; it will not display web pages when run on the Unity Editor.
 
+> [!WARNING]
+> Meta XR All-in-One SDK is having a reference error at version 74 (Please see [this forum](https://www.reddit.com/r/oculusdev/comments/1jn4l5k/error_implementing_meta_allinone_sdk/)), so I will keep version 72 for now.
+
 ## Getting Started
 
 ### Requirements
