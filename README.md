@@ -12,6 +12,17 @@ This sample Unity project is the minimum configuration for using [```TLabWebView
 > [!WARNING]
 > Meta XR All-in-One SDK is having a reference error at version 74 (Please see [this forum](https://www.reddit.com/r/oculusdev/comments/1jn4l5k/error_implementing_meta_allinone_sdk/)), so I will keep version 72 for now.
 
+> [!WARNING]
+> For now, I do not recommend building this project with Unity 6000.x due to unstable. If you do, please refer to the "Configuration for Unity 6000.x" section in the [Setup section](https://github.com/TLabAltoh/TLabWebView?tab=readme-ov-file#set-up).
+
+> [!WARNING]
+> This project uses `HardwareBuffer` as the default `CaptureMode` for WebView. This `HardwareBuffer` option is confirmed to work with Oculus Quest, but may not work with some other devices (e.g., the WebView screen may go blank). In that case, change the `CaptureMode` from `HardwareBuffer` to `ByteBuffer`.
+>
+> <details>
+> <img src="Media/image.0.png" width="256"></img><br>
+> <img src="Media/image.1.png" width="256"></img>
+> </details>
+
 ## Getting Started
 
 ### Requirements
